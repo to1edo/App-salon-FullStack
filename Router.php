@@ -23,9 +23,13 @@ class Router
         // Proteger Rutas...
         session_start();
 
-        $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
-        $method = $_SERVER['REQUEST_METHOD'];
+        $url = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
+      
+        $ruta = explode('?',$url);
 
+        $currentUrl = $ruta[0];
+
+        $method = $_SERVER['REQUEST_METHOD'];
         if ($method === 'GET') {
             $fn = $this->getRoutes[$currentUrl] ?? null;
         } else {
