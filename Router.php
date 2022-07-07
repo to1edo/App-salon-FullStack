@@ -39,7 +39,7 @@ class Router
 
         if ( $fn ) {
             // Call user fn va a llamar una función cuando no sabemos cual sera
-            //debuguear($fn);
+            debuguear($fn);
             call_user_func($fn, $this); // This es para pasar argumentos
         } else {
             echo "Página No Encontrada o Ruta no válida";
