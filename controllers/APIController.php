@@ -32,7 +32,9 @@ class APIController{
             $citaServicio = new CitasServicios($args);
             $citaServicio->guardar();
         }
-        
+        echo "<pre>";
+        var_dump($resultado);
+        echo "</pre>";
         echo json_encode(['resultado' => $resultado]);
     }
 
