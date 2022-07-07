@@ -119,7 +119,7 @@ function paginaSiguiente(){
 async function consultarAPI(){
 
     try {
-        const url = 'https://appsalon-mvc-to1edo.herokuapp.com/api/servicios';
+        const url= 'http://localhost:3000/api/servicios';
         const resultado = await fetch(url);
         const servicios = await resultado.json();
 
