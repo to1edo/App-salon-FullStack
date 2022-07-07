@@ -28,7 +28,7 @@ class Router
         $ruta = explode('?',$url);
 
         $currentUrl = $ruta[0];
-
+        
         $method = $_SERVER['REQUEST_METHOD'];
         if ($method === 'GET') {
             $fn = $this->getRoutes[$currentUrl] ?? null;
