@@ -16,15 +16,8 @@ class APIController{
 
     public static function guardar(){
         //almacena la cita y devuelve el id
-        echo "<pre>";
-        var_dump($_POST);
-        echo "</pre>";
 
         $cita = new Cita($_POST);
-
-        echo "<pre>";
-        var_dump($cita);
-        echo "</pre>";
 
         $resultado = $cita->guardar();
 
