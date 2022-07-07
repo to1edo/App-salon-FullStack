@@ -123,7 +123,6 @@ async function consultarAPI(){
         const resultado = await fetch(url);
         const servicios = await resultado.json();
 
-        console.log(servicios)
         mostrarServicios(servicios);
 
     } catch (error) {
