@@ -119,7 +119,7 @@ function paginaSiguiente(){
 async function consultarAPI(){
 
     try {
-        const url = 'https://agile-wave-82507.herokuapp.com/api/servicios';
+        const url = 'https://appsalon-mvc-to1edo.herokuapp.com/api/servicios';
         const resultado = await fetch(url);
         const servicios = await resultado.json();
 
@@ -364,7 +364,7 @@ async function reservaCita(){
     datos.append('usuarioId',id);
     
     try {
-        const url = 'https://agile-wave-82507.herokuapp.com/api/citas';
+        const url = 'https://appsalon-mvc-to1edo.herokuapp.com/api/citas';
         const respuesta = await fetch(url, {
             method: 'POST',
             body: datos
