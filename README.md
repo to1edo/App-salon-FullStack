@@ -1,6 +1,10 @@
 # App-salon-FullStack
 App web PHP, JavaScript, MySQL, SASS
 
+you can test app with this user:
+user:      correo2@correo.com 
+password:  password
+
 --English---
 This web application was developed as a practical project for the complete web development course I am currently taking.
 
