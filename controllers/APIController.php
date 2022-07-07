@@ -17,6 +17,7 @@ class APIController{
     public static function guardar(){
         //almacena la cita y devuelve el id
         $cita = new Cita($_POST);
+        debuguear($_POST);
         $resultado = $cita->guardar();
         $id = $resultado['id'];
 
@@ -32,9 +33,7 @@ class APIController{
             $citaServicio = new CitasServicios($args);
             $citaServicio->guardar();
         }
-        echo "<pre>";
-        var_dump($resultado);
-        echo "</pre>";
+
         echo json_encode(['resultado' => $resultado]);
     }
 
