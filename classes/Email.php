@@ -63,11 +63,12 @@ class Email{
 
         $mail->isHTML(true);    
         $mail->CharSet = 'UTF-8';
-
+        
+        //mesaje
         $contenido = "<html>";
         $contenido .="<p>Hola <strong>" . $this->nombre . "</strong>, Has solicitado restablecer tu password, debes abrir el siguiente enlace para hacerlo. </p>";
         $contenido .="<p>Presiona aqui: <a href='https://agile-wave-82507.herokuapp.com/recuperar?token=" . $this->token . "'>Restablecer mi password</a> </p>";
-        $contenido .= "<p>Si  no solicitaste esta cuenta, puedes ignorar el mensaje</p>";
+        $contenido .= "<p>Si no solicitaste esta cuenta, puedes ignorar el mensaje</p>";
         $contenido .= "</html>";
 
         $mail->Body = $contenido;
