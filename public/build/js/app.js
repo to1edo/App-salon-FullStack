@@ -119,7 +119,7 @@ function paginaSiguiente(){
 async function consultarAPI(){
 
     try {
-        const url = 'http://localhost:3000/api/servicios';
+        const url = 'https://agile-wave-82507.herokuapp.com/api/servicios';
         const resultado = await fetch(url);
         const servicios = await resultado.json();
         mostrarServicios(servicios);
@@ -362,14 +362,13 @@ async function reservaCita(){
     datos.append('usuarioId',id);
     
     try {
-        const url = 'http://localhost:3000/api/citas';
+        const url = 'https://agile-wave-82507.herokuapp.com/api/citas';
         const respuesta = await fetch(url, {
             method: 'POST',
             body: datos
         });
 
         const resultado = await respuesta.json();
-        console.log(resultado);
         
         if(resultado.resultado){
             Swal.fire(
@@ -391,10 +390,5 @@ async function reservaCita(){
         })
     }
 
-    //console.log([...datos]);
 }
 
-
-
-
-//# sourceMappingURL=app.js.map
