@@ -119,11 +119,11 @@ function paginaSiguiente(){
 async function consultarAPI(){
 
     try {
-        const url = 'https://agile-wave-82507.herokuapp.com/api/servicios';
+        const url = 'http://agile-wave-82507.herokuapp.com/api/servicios';
         const resultado = await fetch(url);
-        console.log(resultado);
         const servicios = await resultado.json();
-        console.log(servicios);
+
+        console.log(servicios)
         mostrarServicios(servicios);
 
     } catch (error) {
