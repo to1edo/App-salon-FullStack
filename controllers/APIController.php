@@ -2,7 +2,7 @@
 
 namespace Controllers;
 
-use Model\cita;
+use Model\Cita;
 use Model\CitasServicios;
 use Model\Servicio;
 
