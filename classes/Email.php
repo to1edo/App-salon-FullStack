@@ -37,7 +37,7 @@ class Email{
 
         $contenido = "<html>";
         $contenido .="<p>Hola <strong>" . $this->nombre . "</strong>, Has creado tu cuenta en App Salon, solo debes confirmarla abriendo el siguiente enlace. </p>";
-        $contenido .="<p>Presiona aqui: <a href='http://localhost:3000/confirmar-cuenta?token=" . $this->token . "'>Confirmar mi cuenta</a> </p>";
+        $contenido .="<p>Presiona aqui: <a href='https://agile-wave-82507.herokuapp.com/confirmar-cuenta?token=" . $this->token . "'>Confirmar mi cuenta</a> </p>";
         $contenido .= "<p>Si no solicitaste esta cuenta, puedes ignorar el mensaje</p>";
         $contenido .= "</html>";
 
@@ -66,7 +66,7 @@ class Email{
 
         $contenido = "<html>";
         $contenido .="<p>Hola <strong>" . $this->nombre . "</strong>, Has solicitado restablecer tu password, debes abrir el siguiente enlace para hacerlo. </p>";
-        $contenido .="<p>Presiona aqui: <a href='http://localhost:3000/recuperar?token=" . $this->token . "'>Restablecer mi password</a> </p>";
+        $contenido .="<p>Presiona aqui: <a href='https://agile-wave-82507.herokuapp.com/recuperar?token=" . $this->token . "'>Restablecer mi password</a> </p>";
         $contenido .= "<p>Si no solicitaste esta cuenta, puedes ignorar el mensaje</p>";
         $contenido .= "</html>";
 
