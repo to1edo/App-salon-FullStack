@@ -25,7 +25,7 @@ class APIController{
 
         //almacena la cita y el servicio
         $idServicios = explode(",",$_POST['servicios']);
-        
+        debuguear($idServicios);
         foreach($idServicios as $idServicio){
             $args = [
                 'citaId' => $id,
